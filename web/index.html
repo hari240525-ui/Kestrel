@@ -158,60 +158,13 @@
 
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script>
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.to(".falcon img",{
 
-// =========================
-// Start Position
-// =========================
+    scale:1.05,
 
-gsap.set(".falcon",{
-
-    xPercent:-50,
-
-    y:350
-
-});
-
-
-// =========================
-// Fly Up While Scrolling
-// =========================
-
-gsap.to(".falcon",{
-
-    y:-2400,
-
-    scale:.45,
-
-    opacity:.18,
-
-    ease:"none",
-
-    scrollTrigger:{
-
-        trigger:"body",
-
-        start:"top top",
-
-        end:"+=900",   // Increased from the default to slow the movement
-
-        scrub:3         // Higher = smoother, slower response
-
-    }
-
-});
-
-
-// =========================
-// Gentle Left-Right Glide
-// =========================
-
-gsap.to(".falcon",{
-
-    x:40,
+    opacity:.35,
 
     duration:2,
 
@@ -223,62 +176,19 @@ gsap.to(".falcon",{
 
 });
 
+gsap.to(".falcon img",{
 
-// =========================
-// Glowing Trail
-// =========================
+    filter:"drop-shadow(0 0 35px #18ff7b)",
 
-const falcon=document.querySelector(".falcon");
+    duration:2,
 
-setInterval(()=>{
+    repeat:-1,
 
-    if(!falcon) return;
+    yoyo:true,
 
-    const trail=document.createElement("div");
+    ease:"sine.inOut"
 
-    trail.className="trail";
-
-    document.body.appendChild(trail);
-
-    const rect=falcon.getBoundingClientRect();
-
-    trail.style.left=(rect.left+rect.width/2)+"px";
-
-    trail.style.top=(rect.top+rect.height/2)+"px";
-
-    gsap.fromTo(
-
-        trail,
-
-        {
-
-            opacity:.8,
-
-            scale:1
-
-        },
-
-        {
-
-            opacity:0,
-
-            scale:3,
-
-            duration:.8,
-
-            ease:"power2.out",
-
-            onComplete(){
-
-                trail.remove();
-
-            }
-
-        }
-
-    );
-
-},70);
+});
 
 </script>
 
