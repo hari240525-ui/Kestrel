@@ -262,4 +262,95 @@ body {
 }
 
 /* ================= RESPONSIVE ================= */
+.hero-card{
+     animation: fadeDown 1s ease;
+}
 
+.hero-text{
+     animation: fadeDown 1s ease;
+}
+.hero h1{
+    animation: fadeDown 1s ease;
+}
+
+.hero p{
+    animation: fadeUp 1.2s ease;
+}
+
+@keyframes fadeDown{
+    from{
+        opacity:0;
+        transform:translateY(-40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ================= FALCON ================= */
+
+.falcon{
+
+    position: fixed;
+
+    left: 50%;
+    bottom: -220px;
+
+    width: 180px;
+
+    transform: translateX(-50%);
+
+    z-index: 9999;
+
+    pointer-events: none;
+
+    opacity: .45;
+
+}
+
+.falcon img{
+
+    width: 100%;
+
+    display: block;
+
+    filter: drop-shadow(0 0 25px #18ff7b);
+
+}
+
+
+/* ================= TRAIL ================= */
+
+.trail{
+
+    position: fixed;
+
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+
+    background: #18ff7b;
+
+    pointer-events: none;
+
+    box-shadow:
+        0 0 8px #18ff7b,
+        0 0 18px #18ff7b,
+        0 0 35px #18ff7b;
+
+    z-index: 9998;
+
+}
