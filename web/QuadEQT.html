@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quadratic Equations Test | Kestrel</title>
+
+    <link rel="stylesheet" href="css/QuadEQT.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <a href="studyM.html" class="back">
+        ← Mathematics
+    </a>
+
+    <div class="logo">
+        Kestrel
+    </div>
+
+    <div class="exam-controls">
+
+        <button id="startBtn" class="start-btn">
+            ▶ Start Test
+        </button>
+
+        <div id="timer" class="timer" style="display:none;">
+            20:00
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <h1>Quadratic Equations Practice Test</h1>
+
+    <p>15 Questions • 20 Minutes • Class 10 CBSE</p>
+
+</section>
+
+<!-- ================= INSTRUCTIONS ================= -->
+
+<div class="instructions">
+
+    <h2>Instructions</h2>
+
+    <ul>
+
+        <li>Read every question carefully.</li>
+        <li>Each question carries 1 mark.</li>
+        <li>No negative marking.</li>
+        <li>Click <b>Start Test</b> to begin the timer.</li>
+        <li>The test auto-submits after 20 minutes.</li>
+
+    </ul>
+
+</div>
+
+<!-- ================= QUIZ ================= -->
+
+<form id="quiz">
+
+<!-- ================= QUESTIONS ================= -->
+
+<div class="question">
+
+    <h3>1. A quadratic equation is an equation of degree:</h3>
+
+    <label><input type="radio" name="q1"> 1</label>
+    <label><input type="radio" name="q1" data-correct="true"> 2</label>
+    <label><input type="radio" name="q1"> 3</label>
+    <label><input type="radio" name="q1"> 4</label>
+
+</div>
+
+<div class="question">
+
+    <h3>2. The standard form of a quadratic equation is:</h3>
+
+    <label><input type="radio" name="q2"> ax + b = 0</label>
+    <label><input type="radio" name="q2" data-correct="true"> ax² + bx + c = 0</label>
+    <label><input type="radio" name="q2"> ax³ + bx² + c = 0</label>
+    <label><input type="radio" name="q2"> x² + y² = 0</label>
+
+</div>
+
+<div class="question">
+
+    <h3>3. In a quadratic equation, the coefficient 'a' cannot be:</h3>
+
+    <label><input type="radio" name="q3" data-correct="true"> 0</label>
+    <label><input type="radio" name="q3"> 1</label>
+    <label><input type="radio" name="q3"> -1</label>
+    <label><input type="radio" name="q3"> 2</label>
+
+</div>
+
+<div class="question">
+
+    <h3>4. Which method is generally the fastest when factorisation is possible?</h3>
+
+    <label><input type="radio" name="q4" data-correct="true"> Factorisation Method</label>
+    <label><input type="radio" name="q4"> Graphical Method</label>
+    <label><input type="radio" name="q4"> Matrix Method</label>
+    <label><input type="radio" name="q4"> Integration</label>
+
+</div>
+
+<div class="question">
+
+    <h3>5. The value b² − 4ac is called:</h3>
+
+    <label><input type="radio" name="q5"> Product of roots</label>
+    <label><input type="radio" name="q5" data-correct="true"> Discriminant</label>
+    <label><input type="radio" name="q5"> Constant</label>
+    <label><input type="radio" name="q5"> Variable</label>
+
+</div>
+
+<div class="question">
+
+    <h3>6. If D > 0, the quadratic equation has:</h3>
+
+    <label><input type="radio" name="q6" data-correct="true"> Two distinct real roots</label>
+    <label><input type="radio" name="q6"> Equal roots</label>
+    <label><input type="radio" name="q6"> No real roots</label>
+    <label><input type="radio" name="q6"> One root only</label>
+
+</div>
+
+<div class="question">
+
+    <h3>7. If D = 0, the roots are:</h3>
+
+    <label><input type="radio" name="q7"> Distinct</label>
+    <label><input type="radio" name="q7" data-correct="true"> Equal</label>
+    <label><input type="radio" name="q7"> Imaginary</label>
+    <label><input type="radio" name="q7"> Infinite</label>
+
+</div>
+
+<div class="question">
+
+    <h3>8. If D < 0, the equation has:</h3>
+
+    <label><input type="radio" name="q8"> Two equal roots</label>
+    <label><input type="radio" name="q8"> One real root</label>
+    <label><input type="radio" name="q8" data-correct="true"> No real roots</label>
+    <label><input type="radio" name="q8"> Infinite roots</label>
+
+</div>
+
+<div class="question">
+
+    <h3>9. The quadratic formula is:</h3>
+
+    <label><input type="radio" name="q9"> x = -b/a</label>
+    <label><input type="radio" name="q9"> x = c/a</label>
+    <label><input type="radio" name="q9" data-correct="true"> x = (-b ± √(b² − 4ac)) / 2a</label>
+    <label><input type="radio" name="q9"> x = a + b + c</label>
+
+</div>
+
+<div class="question">
+
+    <h3>10. The sum of roots of ax² + bx + c = 0 is:</h3>
+
+    <label><input type="radio" name="q10" data-correct="true"> -b/a</label>
+    <label><input type="radio" name="q10"> c/a</label>
+    <label><input type="radio" name="q10"> b/a</label>
+    <label><input type="radio" name="q10"> -c/a</label>
+
+</div>
+
+<div class="question">
+
+    <h3>11. The product of roots is:</h3>
+
+    <label><input type="radio" name="q11"> -b/a</label>
+    <label><input type="radio" name="q11" data-correct="true"> c/a</label>
+    <label><input type="radio" name="q11"> a/c</label>
+    <label><input type="radio" name="q11"> b/c</label>
+
+</div>
+
+<div class="question">
+
+    <h3>12. Which method can solve every quadratic equation?</h3>
+
+    <label><input type="radio" name="q12"> Factorisation only</label>
+    <label><input type="radio" name="q12"> Graphical Method</label>
+    <label><input type="radio" name="q12" data-correct="true"> Quadratic Formula</label>
+    <label><input type="radio" name="q12"> Trial and Error</label>
+
+</div>
+
+<div class="question">
+
+    <h3>13. Which equation is quadratic?</h3>
+
+    <label><input type="radio" name="q13"> 2x + 5 = 0</label>
+    <label><input type="radio" name="q13" data-correct="true"> x² + 4x + 3 = 0</label>
+    <label><input type="radio" name="q13"> x³ + 2 = 0</label>
+    <label><input type="radio" name="q13"> x + y = 5</label>
+
+</div>
+
+<div class="question">
+
+    <h3>14. Which method converts an expression into a perfect square?</h3>
+
+    <label><input type="radio" name="q14"> Factorisation</label>
+    <label><input type="radio" name="q14" data-correct="true"> Completing the Square</label>
+    <label><input type="radio" name="q14"> Elimination</label>
+    <label><input type="radio" name="q14"> Substitution</label>
+
+</div>
+
+<div class="question">
+
+    <h3>15. Which chapter concept helps determine the nature of roots?</h3>
+
+    <label><input type="radio" name="q15"> Sum of Roots</label>
+    <label><input type="radio" name="q15"> Product of Roots</label>
+    <label><input type="radio" name="q15" data-correct="true"> Discriminant</label>
+    <label><input type="radio" name="q15"> Factorisation</label>
+
+</div>
+<div class="submit-area">
+
+    <button type="button" class="submit-btn" onclick="checkAnswers()">
+        Submit Test
+    </button>
+
+</div>
+
+</form>
+
+<div id="result" class="result"></div>
+
+<script>
+
+let time = 20 * 60;
+let countdown = null;
+
+const timer = document.getElementById("timer");
+const startBtn = document.getElementById("startBtn");
+
+startBtn.addEventListener("click", () => {
+
+    startBtn.style.display = "none";
+    timer.style.display = "block";
+
+    countdown = setInterval(() => {
+
+        let minutes = Math.floor(time / 60);
+        let seconds = time % 60;
+
+        timer.textContent =
+            `${String(minutes).padStart(2,"0")}:${String(seconds).padStart(2,"0")}`;
+
+        if(time <= 0){
+
+            clearInterval(countdown);
+            checkAnswers();
+
+        }
+
+        time--;
+
+    },1000);
+
+});
+
+function checkAnswers(){
+
+    if(countdown){
+        clearInterval(countdown);
+    }
+
+    let score = 0;
+
+    document.querySelectorAll("input[data-correct='true']").forEach(answer=>{
+
+        if(answer.checked){
+            score++;
+        }
+
+    });
+
+    let percentage = Math.round((score/15)*100);
+
+    let message;
+
+    if(score >= 12){
+
+        message = "🏆 Excellent Work!";
+
+    }
+    else if(score >= 8){
+
+        message = "👍 Good Job! Keep Practicing.";
+
+    }
+    else{
+
+        message = "📚 Revise the chapter and try again.";
+
+    }
+
+    document.getElementById("result").innerHTML = `
+
+        <h2>Your Score</h2>
+
+        <h1>${score} / 15</h1>
+
+        <p>${percentage}%</p>
+
+        <h3>${message}</h3>
+
+    `;
+
+    window.scrollTo({
+
+        top: document.body.scrollHeight,
+        behavior: "smooth"
+
+    });
+
+}
+
+</script>
+
+</body>
+</html>
